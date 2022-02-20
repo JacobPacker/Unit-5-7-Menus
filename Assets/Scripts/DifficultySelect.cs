@@ -18,45 +18,45 @@ public class DifficultySelect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (easy = true)
-        {
-
-        }
+        
     }
     public void Easy()
     {
         easy = true;
         medium = false;
         hard = false;
+        changingTextTwo.GetComponent<Text>().text = "Difficulty: Easy";
     }
     public void Medium()
     {
         easy = false;
         medium = true;
         hard = false;
+        changingTextTwo.GetComponent<Text>().text = "Difficulty: Medium";
     }
     public void Hard()
     {
         easy = false;
         medium = false;
         hard = true;
+        changingTextTwo.GetComponent<Text>().text = "Difficulty: Hard";
     }
-    public void TextChange()
+    /*public void TextChange()
     {
-        if (easy = true)
+        if (easy == true)
         {
             
             changingTextTwo.GetComponent<Text>().text = "Difficulty: Easy";
         }
-        if (medium = true)
+        if (medium == true)
         {
             
             changingTextTwo.GetComponent<Text>().text = "Difficulty: Medium";
         }
-        if (hard = true)
+        if (hard == true)
         {
             
             changingTextTwo.GetComponent<Text>().text = "Difficulty: Hard";
         }
-    }
+    }*/
 }
