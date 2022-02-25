@@ -12,6 +12,15 @@ public class CameraScript : MonoBehaviour
         MainCamera.enabled = true;
         GameCamera.enabled = false;
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            MainCamera.enabled = true;
+            GameCamera.enabled = false;
+        }
+
+    }
 
     public void ShowGameView()
     {
