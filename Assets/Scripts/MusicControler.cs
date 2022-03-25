@@ -13,7 +13,7 @@ public class MusicControler : MonoBehaviour
     }
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("musicVol", volume);
+        audioMixer.SetFloat("BgmVolume", volume);
     }
     public void MutePressed()
     {

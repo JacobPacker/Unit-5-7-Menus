@@ -8,7 +8,8 @@ public class SFXControler : MonoBehaviour
     public AudioMixer audioMixer;
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("SFXVol", volume);
+        audioMixer.SetFloat("SfxVolume", volume);
 
     }
+    
 }
