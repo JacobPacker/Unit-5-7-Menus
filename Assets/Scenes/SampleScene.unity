@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -613,6 +613,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac8c648a218fef4a819165aafe18b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1204499113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 112.62787
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 315.5704
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3939.5725
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538757, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227203318076538875, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+      propertyPath: m_Name
+      value: audio Manager 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b935552d64c09f640b701a51d570f48e, type: 3}
 --- !u!1 &1225409152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1076,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693597788}
   m_CullTransparentMesh: 1
+--- !u!114 &2065511181 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3227203318076538756, guid: b935552d64c09f640b701a51d570f48e, type: 3}
+  m_PrefabInstance: {fileID: 1204499113}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3646dd70660f863468114c5cd099530d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2072346647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,12 +1111,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072346647}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b28f1d8da367114480324727be59c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Button: {fileID: 1441613603}
+  audioManager: {fileID: 2065511181}
+  musicSliderVol: {fileID: 0}
+  sfxSliderVol: {fileID: 0}
 --- !u!4 &2072346649
 Transform:
   m_ObjectHideFlags: 0

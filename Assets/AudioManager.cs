@@ -29,7 +29,7 @@ public class AudioManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
 
-        
+        //return;
 
 
         //add sounds to audio sources with their varying info
@@ -64,6 +64,7 @@ public class AudioManager : MonoBehaviour
     //plays sound
     public void Play(string name)
     {
+        
         Sound s = Array.Find(sounds, sound => sound.name == name);
         //custom error message when cant find clip name
         if (s == null)
@@ -71,7 +72,7 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
-        s.source.Play();
+        //s.source.Play();
     }
 
     public void PlayMusic(string name)
@@ -83,7 +84,7 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Music: " + name + " not found!");
             return;
         }
-        m.source.Play();
+        //m.source.Play();
     }
 
     //to play do

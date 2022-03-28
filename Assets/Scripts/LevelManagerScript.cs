@@ -14,13 +14,16 @@ public class LevelManagerScript : MonoBehaviour
 
     void Awake()
     {
-        musicSliderVol.value = PlayerPrefs.GetFloat("musicVol");
-        sfxSliderVol.value = PlayerPrefs.GetFloat("sfxVol");
 
     }
     // Start is called before the first frame update
     void Start()
     {
+
+        musicSliderVol.value = PlayerPrefs.GetFloat("musicVol");
+        sfxSliderVol.value = PlayerPrefs.GetFloat("sfxVol");
+
+
         Button.GetComponent<Button>().Select();
 
         print("load menu");

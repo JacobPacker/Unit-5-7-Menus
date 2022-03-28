@@ -20,17 +20,14 @@ public class DifficultySelect : MonoBehaviour
     }
     public void Easy()
     {
-        
         changingTextTwo.GetComponent<Text>().text = "Difficulty: Easy";
     }
     public void Medium()
     {
-        
         changingTextTwo.GetComponent<Text>().text = "Difficulty: Medium";
     }
     public void Hard()
     {
-        
         changingTextTwo.GetComponent<Text>().text = "Difficulty: Hard";
     }
     /*public void TextChange()
