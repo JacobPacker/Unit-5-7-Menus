@@ -20,4 +20,12 @@ public class MusicControler : MonoBehaviour
         isMuted = !isMuted;
         AudioListener.pause = isMuted;
     }
+
+    void Update()
+    {
+        print("music controller upd=" + Time.deltaTime);
+
+        float volume = PlayerPrefs.GetFloat("musicVol");
+        audioMixer.SetFloat("BgmVolume", volume);
+    }
 }

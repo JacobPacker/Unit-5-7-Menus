@@ -28,7 +28,7 @@ public class LevelManagerScript : MonoBehaviour
 
         print("load menu");
 
-        float musicVol = PlayerPrefs.GetFloat("musicVol");
+        float musicVol = 1;// PlayerPrefs.GetFloat("musicVol");
         print("stored music vol " + musicVol);
 
         float sfxVol = PlayerPrefs.GetFloat("sfxVol");

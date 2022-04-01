@@ -7,7 +7,9 @@ public class MusicScript : MonoBehaviour
 {
     public void MusicSliderChanged( float newValue )
     {
-        //print("value changed to " + newValue);
+        print("value changed to " + newValue);
         PlayerPrefs.SetFloat("musicVol", newValue);
+
+
     }
 }
